@@ -6,7 +6,10 @@ export function KosherSubstitutesIndex(props) {
         <div key={kosherSubstitute.id}>
           <h2>{kosherSubstitute.name}</h2>
           <p>{kosherSubstitute.brand}</p>
-          <p>{kosherSubstitute.url}</p>
+          <a target="_blank" rel="noreferrer" href={kosherSubstitute.url}>
+            {" "}
+            Shop product
+          </a>
         </div>
       ))}
     </div>
