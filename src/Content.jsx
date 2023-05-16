@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { WhatIsKosher } from "./WhatIsKosher";
 import { IngredientsIndex } from "./IngredientsIndex";
 import { RecipesIndex } from "./RecipesIndex";
 import { PantryItemsIndex } from "./PantryItemsIndex";
@@ -49,7 +50,8 @@ export function Content() {
   useEffect(handleIndexKosherSubstitutes, []);
 
   return (
-    <div>
+    <div className="container">
+      <WhatIsKosher />
       <IngredientsIndex ingredients={ingredients} />
       <RecipesIndex recipes={recipes} />
       <PantryItemsIndex pantryItems={pantryItems} />

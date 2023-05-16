@@ -1,7 +1,7 @@
 export function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ paddingLeft: "25px" }}>
         <a className="navbar-brand" href="#">
           Kosher Recipes App
         </a>
